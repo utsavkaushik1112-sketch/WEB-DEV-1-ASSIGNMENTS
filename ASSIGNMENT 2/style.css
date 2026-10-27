@@ -1,0 +1,207 @@
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+/* General Styles */
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    background-color: #f4f4f4;
+    color: #222;
+    text-align: center;
+}
+
+/* Navigation Styles */
+header {
+    background-color: #004aad;
+    color: white;
+    padding: 12px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+header h2 {
+    font-size: 20px;
+    margin: 0;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 8px 12px;
+    font-size: 13px;
+    display: inline-block;
+}
+
+nav a:hover {
+    background-color: #003580;
+    border-radius: 5px;
+}
+
+/* Section Styles */
+section {
+    padding: 20px;
+    margin: 0 auto;
+}
+
+h3 {
+    font-size: 18px;
+    margin: 0 0 15px;
+}
+
+/* About Section */
+.profile-img {
+    width: 180px;
+    height: 180px;
+    object-fit: contain;
+    background-color: #d4e5ff;
+    border-radius: 50%;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+#about p {
+    font-size: 12px;
+    margin: 15px auto;
+    max-width: 600px;
+}
+
+/* Horizontal Separators */
+hr {
+    border: none;
+    border-top: 2px solid #ccc;
+    margin: 0;
+}
+
+/* Skills Table */
+table {
+    width: 80%;
+    max-width: 450px;
+    margin: 0 auto;
+    border-collapse: collapse;
+    font-size: 12px;
+}
+
+th {
+    background-color: #004aad;
+    color: white;
+}
+
+th, td {
+    border: 1px solid #8da9cc;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: #e4edfa;
+}
+
+/* Projects Section */
+.project-card {
+    background-color: white;
+    width: 80%;
+    max-width: 450px;
+    margin: 12px auto;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+}
+
+.project-card h4 {
+    margin: 0 0 8px;
+    font-size: 14px;
+}
+
+.project-card p {
+    font-size: 12px;
+    margin: 0;
+}
+
+/* Contact Form */
+.contact-table {
+    max-width: 450px;
+    width: 80%;
+    border: 1px solid #8da9cc;
+}
+
+.contact-table td {
+    padding: 5px;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 6px;
+    border: 1px solid #aaa;
+    border-radius: 3px;
+    font-family: inherit;
+    font-size: 11px;
+}
+
+textarea {
+    resize: vertical;
+    min-height: 35px;
+}
+
+.submit-cell {
+    text-align: center;
+}
+
+button {
+    background-color: #004aad;
+    color: white;
+    border: none;
+    padding: 8px 30px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #003580;
+}
+
+/* Fixed Back to Top Button */
+.back-to-top {
+    position: fixed;
+    bottom: 15px;
+    right: 15px;
+    background-color: #004aad;
+    color: white;
+    padding: 8px 12px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 12px;
+}
+
+.back-to-top:hover {
+    background-color: #003580;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    section {
+        padding: 18px 10px;
+    }
+
+    table,
+    .project-card {
+        width: 95%;
+    }
+
+    .profile-img {
+        width: 150px;
+        height: 150px;
+    }
+
+    nav a {
+        padding: 6px;
+        font-size: 12px;
+    }
+}
+
